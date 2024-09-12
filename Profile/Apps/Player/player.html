@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Player</title>
+	<link rel="stylesheet" href="player.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+	
+<div id="left">
+	<video width="100%" id="video_player">
+		<source id="video_src" src="https://www.statushut.org/wp-content/uploads/2024/07/Fuull-Screeen-Friendship-Day-Videos-Status-2024.mp4"></source>
+	</video>
+
+	<div id="progress_box">
+		<div id="progress_bar"></div>
+	</div>
+
+	<div id="control">
+		<div id="timing">
+			<p id="v_timing">00:00/00:00</p>
+		</div>
+
+		<div id="play_tools">
+			<i class="fa fa-angle-double-left" aria-hidden="true" id="previous_btn"></i>
+			<i class="fa fa-play" aria-hidden="true" id="play_btn"></i>
+			<i class="fa fa-angle-double-right" aria-hidden="true" id="next_btn"></i>
+		</div>
+
+		<div id="other_tools">
+			<div id="volume_box">
+				<input type="range" min="0" max="1" step="0.01" id="volume_control">
+				<i class="fas fa-volume-up" id="volume"></i>
+			</div>
+			
+			<div id="speed_box">
+				<input type="range" min="0" max="2" step="0.01" id="speed_control">
+				<i class="fas fa-tachometer-alt-fast" id="speed"></i>
+			</div>
+			<i class="fas fa-expand" id="full_screen"></i>
+		</div>
+	</div>
+</div>
+
+<div id="right">
+	<div id="top">
+		<h3>Playlist</h3>
+		<input type="search" placeholder="Search Your Videos Here..." id="video_search">
+		<i class="fas fa-plus-circle" id="add_video"></i>
+
+		<div id="add_video_box">
+			<h2>Add Videos</h2>
+			<form>
+				<input type="text" placeholder="Enter Your Video Name..." id="video_name" required>
+				<input type="text" placeholder="Enter Your Video link..." id="video_link" required>
+				<button type="submit" id="save_video_btn">Add</button>
+			</form>
+		</div>
+	</div>
+	
+	<div id="bottom"></div>
+</div>
+
+<script type="text/javascript" src="player.js"></script>
+</body>
+</html>

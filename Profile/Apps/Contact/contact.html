@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+<div id="profile_box">
+	<div id="profile_pic"></div>
+	<i class="fa fa-plus-circle" id="new_contact"></i>
+</div>
+	
+<div id="main_contact_box">
+	<div id="contact_header">
+		<h1><i class="fa-solid fa-user-circle" aria-hidden="true"></i> All Contact</h1>
+		<input type="search" placeholder="Search Your Contact Here...." id="search">
+	</div>
+	<div id="all_contact">
+		
+	</div>
+</div>
+
+
+<div id="add_contact_box" class="animate__animated animate__fadeIn">
+	<center>
+		<div id="contact_form"  class="animate__animated animate__slideInDown">
+			<h1 id="c_heading">Add new contact</h1>
+			<form>
+				<input type="text" placeholder="Enter Name" id="contact_name">
+				<i class="fa fa-exclamation-circle" aria-hidden="true" id="name_w"></i>
+				<input type="number" placeholder="Enter Mobile no" id="contact_number">
+				<i class="fa fa-exclamation-circle" aria-hidden="true" id="num_w"></i>
+				<button type="submit" id="add">Add</button>
+				<button type="button" id="close">Close</button>
+			</form>
+		</div>
+	</center>
+</div>
+
+<script src="contact.js"></script>
+</body>
+</html>

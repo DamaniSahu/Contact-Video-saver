@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#left{
+	width: 75%;
+	height: 100vh;
+	float: left;
+}
+
+#video_player{
+	width: 100%;
+	height: 87%;
+}
+
+#progress_box{
+	width: 100%;
+	height: 10px;
+	background-color: white;
+	margin-bottom: 3px;
+}
+
+#progress_bar{
+	width: 0%;
+	height: 10px;
+	border-radius: 15px;
+	background: #007991;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#control{
+	width: 100%;
+	height: 70px;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#v_timing{
+	color: white;
+	font-size: 20px;
+	font-family: Ubuntu, sans-serif;
+	margin-left: 20px;
+}
+
+#play_tools{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#play_btn{
+	font-size: 50px;
+	color: white;
+	cursor: pointer;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#previous_btn,#next_btn{
+	font-size: 50px;
+	color: white;
+	cursor: pointer;
+}
+
+#volume,#full_screen,#speed{
+				color: white;
+				font-size: 25px;
+				margin-right: 20px;
+				cursor: pointer;
+}
+
+#timing,#play_tools,#other_tools{
+	width: 33.33%;
+}
+
+#other_tools{
+	display: flex;
+	justify-content: flex-end;
+}
+
+#right{
+	width: 25%;
+	height: 100vh;
+	float: right;
+}
+
+#top{
+	width: 100%;
+	height: 17%;
+	padding: 15px;
+	background-color: #ddd;
+}
+
+#top h3{
+	font-family: Ubuntu, sans-serif;
+	text-align: center;
+	font-size: 25px;
+}
+
+#video_search{
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	font-family: Ubuntu, sans-serif;
+	outline: none;
+	margin-top: 15px;
+}
+
+#add_video{
+	font-size: 25px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
+}
+
+#add_video_box{
+	width: 20%;
+	height: 200px;
+	border-radius: 15px 0px 15px 15px;
+	background-color: #323232;
+	position: absolute;
+	top: 25px;
+	right: 40px;
+	padding: 20px;
+	display: none;
+}
+
+#add_video_box h2{
+	color: white;
+	font-family: Ubuntu, sans-serif;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#video_name,#video_link{
+	width: 100%;
+	padding: 8px;
+	font-family: Ubuntu, sans-serif;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+}
+
+#save_video_btn{
+	width: 70px;
+	background-color: white;
+	outline: none;
+	padding: 8px;
+	font-family: Ubuntu, sans-serif;
+	border: none;
+	cursor: pointer;
+	display: block;
+	margin: 0px auto;
+}
+
+#bottom{
+	width: 100%;
+	height: 80%;
+	padding: 20px;
+	overflow: auto;
+}
+
+#main_video_box{
+	width: 100%;
+	height: auto;
+	box-shadow: 0px 0px 6px #ccc;
+	margin-bottom: 20px;
+}
+
+#video_playlist{
+	width: 100%;
+	padding: 10px;
+	font-family: Ubuntu, sans-serif;
+	font-size: 18px;
+}
+
+#video_play_btn{
+	width: 50%;
+	border: none;
+	padding: 9px;
+	font-family: Ubuntu, sans-serif;
+	cursor: pointer;
+	background-color: green;
+	color: white;
+}
+
+#video_delet_btn{
+	width: 50%;
+	border: none;
+	padding: 9px;
+	font-family: Ubuntu, sans-serif;
+	cursor: pointer;
+	background-color: #ea4335;
+	color: white;
+}
+
+#volume_box,#speed_box{
+	width: fit-content;
+	position: relative;
+}
+
+#volume_control,#speed_control{
+	width: 100px;
+	height: 15px;
+	background-color: #76fdd5;
+	appearance: none;
+	transform: rotate(270deg);
+	outline: none;
+	position: absolute;
+	top: -68px;
+	right: -15px;
+	border-radius: 15px;
+	display: none;
+}
+
+#volume_control::-webkit-slider-thumb{
+	width: 15px;
+	height: 15px;
+	background-color: #027b92;
+	appearance: none;
+	border-radius: 15px;
+}
+
+#speed_control::-webkit-slider-thumb{
+	width: 15px;
+	height: 15px;
+	background-color: #027b92;
+	appearance: none;
+	border-radius: 15px;
+}
+
+/* Reponsive coding */
+
+@media(max-width: 768px)
+{
+	#left{
+		width: 100%;
+		height: auto;
+	}
+	#right{
+		width: 100%;
+	}
+	#volume,#full_screen,#speed{
+		font-size: 20px;
+		margin-right: 14px;
+	}
+	#previous_btn,#next_btn{
+	font-size: 25px;
+	}
+	#play_btn{
+		font-size: 30px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	#v_timing{
+		font-size: 15px;
+	}
+	#control{
+		height: 45px;
+	}
+	#progress_bar,#progress_box{
+		height: 4px;
+	}
+	#add_video{
+		top: 0px;
+		right: 0px;
+	}
+}

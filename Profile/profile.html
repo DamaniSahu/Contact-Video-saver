@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="profile.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div id="profile_container">
+		<div id="page_cover">
+			<div id="profile_box">
+				<div id="profile_pic">
+					<i class="fa fa-user" aria-hidden="true" id="profile_icon"></i>
+					<input type="file" accept="image/*" id="profile_upload">
+				</div>
+				<p id="profile_text">Upload Profile Pic</p>
+				<h1 id="profile_name"></h1>
+				<button id="profile_btn">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="main_profile_page">
+		<div id="profile_header">
+			<div id="profile_picture">
+				
+			</div>
+		</div>
+		<h1 id="profile_user"></h1>
+		<div id="app">
+			<a href="Apps/Contact/contact.html">
+				<div id="contact">
+					<i class="fa fa-address-book"></i>
+					<p>Contact</p>
+				</div>
+			</a>
+			<a href="Apps/Player/player.html">
+				<div id="player">
+					<i class="fa fa-play-circle"></i>
+					<p>Player</p>
+				</div>
+			</a>
+			<div id="logout">
+				<i class="fa fa-sign-out-alt"></i>
+				<p id="logout_text">Logout</p>
+			</div>
+		</div>
+		<div id="profile_footer">
+			<p>Develop By : Damani</p>
+		</div>
+	</div>
+
+	<script src="profile.js"></script>
+</body>
+</html>
