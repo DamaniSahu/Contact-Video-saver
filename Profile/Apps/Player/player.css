@@ -44,9 +44,9 @@
 
 #v_timing{
 	color: white;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-family: Ubuntu, sans-serif;
-	margin-left: 20px;
+	margin-left: 1.25rem;
 }
 
 #play_tools{
@@ -61,22 +61,35 @@
 	cursor: pointer;
 	margin-left: 20px;
 	margin-right: 20px;
+	transition: color 0.3s ease, transform 0.2s ease;
 }
 
-#previous_btn,#next_btn{
-	font-size: 50px;
+#play_btn:hover {
+
+    color: #78ffd6; /* Change color on hover */
+	transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+#previous_btn,
+#next_btn{
+	font-size: 3.125rem;
 	color: white;
 	cursor: pointer;
 }
 
-#volume,#full_screen,#speed{
-				color: white;
-				font-size: 25px;
-				margin-right: 20px;
-				cursor: pointer;
+#volume,
+#full_screen,
+#speed{
+	color: white;
+	font-size: 25px;
+	margin-right: 20px;
+	cursor: pointer;
 }
 
-#timing,#play_tools,#other_tools{
+/* Timing and tool sections */
+#timing,
+#play_tools,
+#other_tools{
 	width: 33.33%;
 }
 
@@ -91,6 +104,7 @@
 	float: right;
 }
 
+/* Top section styles */
 #top{
 	width: 100%;
 	height: 17%;
@@ -104,6 +118,7 @@
 	font-size: 25px;
 }
 
+/* Search box */
 #video_search{
 	width: 100%;
 	padding: 8px;
@@ -113,22 +128,23 @@
 	margin-top: 15px;
 }
 
+/* Add video styles */
 #add_video{
 	font-size: 25px;
-	position: absolute;
-	top: 15px;
-	right: 15px;
+	position: relative;
+	top: -75px;
+	right: -260px;
 	cursor: pointer;
 }
 
 #add_video_box{
-	width: 20%;
+	width: 80%;
 	height: 200px;
 	border-radius: 15px 0px 15px 15px;
 	background-color: #323232;
-	position: absolute;
-	top: 25px;
-	right: 40px;
+	position: relative;
+	top: -88px;
+	right: -28px;
 	padding: 20px;
 	display: none;
 }
@@ -140,7 +156,8 @@
 	text-align: center;
 }
 
-#video_name,#video_link{
+#video_name,
+#video_link{
 	width: 100%;
 	padding: 8px;
 	font-family: Ubuntu, sans-serif;
@@ -160,6 +177,7 @@
 	margin: 0px auto;
 }
 
+/* Bottom section styles */
 #bottom{
 	width: 100%;
 	height: 80%;
@@ -174,6 +192,7 @@
 	margin-bottom: 20px;
 }
 
+/* Video playlist styles */
 #video_playlist{
 	width: 100%;
 	padding: 10px;
@@ -181,6 +200,7 @@
 	font-size: 18px;
 }
 
+/* Video action buttons */
 #video_play_btn{
 	width: 50%;
 	border: none;
@@ -238,7 +258,7 @@
 
 /* Reponsive coding */
 
-@media(max-width: 768px)
+@media(max-width: 769px)
 {
 	#left{
 		width: 100%;
@@ -269,7 +289,62 @@
 		height: 4px;
 	}
 	#add_video{
-		top: 0px;
-		right: 0px;
+		left: 650px;
+	}
+	#add_video_box{
+		left: 60px;
+		top: -80px;
+	}
+}
+
+@media(max-width: 1024px){
+	#add_video{
+		right: -190px;
+	}
+	#add_video_box{
+		right: -10px;;
+	}
+}
+
+@media(max-width: 426px){
+	#add_video{
+		right: -350px;
+	}
+	#add_video_box{
+		right: -35px;
+		top: -80px;
+	}
+}
+
+@media(max-width: 376px){
+	#add_video{
+		right: -300px;
+	}
+	#add_video_box{
+		right: -30px;
+		top: -80px;
+	}
+}
+
+@media(max-width: 321px){
+	#add_video{
+		right: -250px;
+	}
+	#add_video_box{
+		right: -22px;
+		top: -80px;
+	}
+	#v_timing{
+		font-size: 12px;
+	}
+	#play_btn{
+		font-size: 20px;
+	}
+	#previous_btn,#next_btn{
+		font-size: 20px;
+	}
+	#volume,#full_screen,#speed{
+		font-size: 15px;
+		margin-right: 14px;
 	}
 }
